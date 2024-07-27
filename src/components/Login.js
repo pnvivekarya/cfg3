@@ -18,7 +18,7 @@ export default class Login extends Component {
   render() {
     return (
       <div className="divid">
-        <div className="container1 " id="container1">
+        <div className="container1" id="container1">
           <div className="form-container sign-up">
             <form>
               <h1>Create Account</h1>
@@ -43,7 +43,7 @@ export default class Login extends Component {
 
           <div className="form-container sign-in">
             <form>
-              <h1> Log in</h1>
+              <h1>Log in</h1>
               <br />
               <div className="radio-container">
                 <label>
@@ -75,7 +75,7 @@ export default class Login extends Component {
                   Welcome To Rohini
                   <br />
                 </h1>
-                <p> Log in With ID & Passowrd</p>
+                <p>Log in With ID & Password</p>
                 <button className="hidden" id="login">
                   Log in
                 </button>

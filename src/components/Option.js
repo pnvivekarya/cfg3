@@ -33,10 +33,7 @@ export default class Option extends Component {
               <div className="card-body">
                 <h5 className="card-title"></h5>
                 <p className="card-text">Enter Patient Details Via Chatbot</p>
-                <Link
-                  to="/doctor/uploaddata/chatbot"
-                  className="btn btn-primary"
-                >
+                <Link to="#" className="btn btn-primary">
                   Enter
                 </Link>
               </div>

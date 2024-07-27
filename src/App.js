@@ -7,7 +7,6 @@ import Login from "./components/Login";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { DoctorNavbar } from "./components/DoctorNavbar";
 import Option from "./components/Option";
-import Doctorviewdata from "./components/Doctorviewdata";
 import Chatbot from "./components/Chatbot";
 import Viewdata from "./components/Viewdata";
 
