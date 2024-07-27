@@ -48,7 +48,8 @@
 
 .divid {
   /* background-color: rgba(192, 156, 156, 0.795); */
-  background-image: url("/bg.webp");
+  background-image: url("/background.png");
+  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: center;

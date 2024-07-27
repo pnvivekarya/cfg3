@@ -22,19 +22,16 @@ export default class Login extends Component {
           <div className="form-container sign-up">
             <form>
               <h1>Create Account</h1>
-              <div className="social-icons">
-                <a href="#" className="icons">
-                  <i className="bx bxl-google"></i>
-                </a>
-                <a href="#" className="icons">
-                  <i className="bx bxl-facebook"></i>
-                </a>
-                <a href="#" className="icons">
-                  <i className="bx bxl-github"></i>
-                </a>
-                <a href="#" className="icons">
-                  <i className="bx bxl-linkedin"></i>
-                </a>
+              <br />
+              <div className="radio-container">
+                <label>
+                  Doctor:
+                  <input type="radio" name="op1" />
+                </label>
+                <label>
+                  Coordinator:
+                  <input type="radio" name="op1" />
+                </label>
               </div>
               <span>Register with E-mail</span>
               <input type="text" placeholder="Name" />
@@ -46,20 +43,17 @@ export default class Login extends Component {
 
           <div className="form-container sign-in">
             <form>
-              <h1>Sign In</h1>
-              <div className="social-icons">
-                <a href="#" className="icons">
-                  <i className="bx bxl-google"></i>
-                </a>
-                <a href="#" className="icons">
-                  <i className="bx bxl-facebook"></i>
-                </a>
-                <a href="#" className="icons">
-                  <i className="bx bxl-github"></i>
-                </a>
-                <a href="#" className="icons">
-                  <i className="bx bxl-linkedin"></i>
-                </a>
+              <h1> Log in</h1>
+              <br />
+              <div className="radio-container">
+                <label>
+                  Doctor:
+                  <input type="radio" name="op" />
+                </label>
+                <label>
+                  Coordinator:
+                  <input type="radio" name="op" />
+                </label>
               </div>
               <span>Login With Email & Password</span>
               <input type="email" placeholder="Enter E-mail" />
@@ -68,7 +62,7 @@ export default class Login extends Component {
 
               <Link className="cr" to="/">
                 <button className="" type="submit">
-                  Sign In
+                  Log in
                 </button>
               </Link>
             </form>
@@ -78,17 +72,17 @@ export default class Login extends Component {
             <div className="toggle">
               <div className="toggle-panel toggle-left">
                 <h1>
-                  Welcome To <br />
-                  News Monkey
+                  Welcome To Rohini
+                  <br />
                 </h1>
-                <p>Sign in With ID & Passowrd</p>
+                <p> Log in With ID & Passowrd</p>
                 <button className="hidden" id="login">
-                  Sign In
+                  Log in
                 </button>
               </div>
               <div className="toggle-panel toggle-right">
-                <h1>NewsMonkey</h1>
-                <p>Join us to stay updated with all the news</p>
+                <h1>Rohini</h1>
+                <p>Don't have an account? Create an account</p>
                 <button className="hidden" id="register">
                   Sign Up
                 </button>

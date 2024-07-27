@@ -5,6 +5,11 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import Login from "./components/Login";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { DoctorNavbar } from "./components/DoctorNavbar";
+import Option from "./components/Option";
+import Doctorviewdata from "./components/Doctorviewdata";
+import Chatbot from "./components/Chatbot";
+import Viewdata from "./components/Viewdata";
 
 export default class App extends Component {
   render() {
@@ -27,65 +32,43 @@ export default class App extends Component {
         ),
       },
       {
-        path: "/science",
+        path: "/doctor/uploaddata",
         element: (
           <>
-            <Navbar />
-            <News category="science" />
+            <DoctorNavbar />
+            <div className="my-10">
+              <Option />
+            </div>
           </>
         ),
       },
       {
-        path: "/sports",
+        path: "/doctor/uploaddata/chatbot",
         element: (
           <>
-            <Navbar />
-            <News category="sports" />
+            <div className="my-10">
+              <Chatbot />
+            </div>
           </>
         ),
       },
       {
-        path: "/technology",
+        path: "/doctor/updates",
         element: (
           <>
-            <Navbar />
-            <News category="technology" />
+            <DoctorNavbar />
+            <div className="my-10"></div>
           </>
         ),
       },
       {
-        path: "/health",
+        path: "/doctor/viewdata",
         element: (
           <>
-            <Navbar />
-            <News category="health" />
-          </>
-        ),
-      },
-      {
-        path: "/general",
-        element: (
-          <>
-            <Navbar />
-            <News category="general" />
-          </>
-        ),
-      },
-      {
-        path: "/entertainment",
-        element: (
-          <>
-            <Navbar />
-            <News category="entertainment" />
-          </>
-        ),
-      },
-      {
-        path: "/business",
-        element: (
-          <>
-            <Navbar />
-            <News category="business" />
+            <DoctorNavbar />
+            <div className="my-10">
+              <Viewdata />
+            </div>
           </>
         ),
       },

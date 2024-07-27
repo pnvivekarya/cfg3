@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-export class Navbar extends Component {
+export class DoctorNavbar extends Component {
   render() {
     return (
       <>
@@ -9,7 +9,7 @@ export class Navbar extends Component {
           style={{ backgroundColor: "rgb(136 184 255)" }}
         >
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/doctorpage">
               Rohini
             </Link>
             <button
@@ -29,16 +29,37 @@ export class Navbar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">
-                    Home
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/doctor/uploaddata"
+                  >
+                    Uplaod Data
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/doctor/viewdata"
+                  >
+                    View Data
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/doctor/updates"
+                  >
+                    Updates
                   </Link>
                 </li>
               </ul>
               <form className="d-flex" role="search">
-                <Link className="cr" to="/link">
-                  <button className="btn btn-outline-success" type="submit">
-                    Sign In
-                  </button>
+                <span>Welcome Back </span>
+                <Link className="cr" to="/doctor/uploaddata">
+                  <button className="btn btn-outline-success">Logged IN</button>
                 </Link>
               </form>
             </div>
@@ -49,4 +70,4 @@ export class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default DoctorNavbar;
