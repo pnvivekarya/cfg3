@@ -254,3 +254,22 @@ a.cr:active {
   text-decoration: none;
   color: inherit;
 }
+
+.container111 {
+  display: flex;
+  width: 100%;
+}
+
+.app-container111 {
+  flex: 1 1 33%; /* Takes up 33% of the width */
+  background-color: lightgrey; /* Optional: for visibility */
+}
+
+.imagerow111 {
+  flex: 1 1 66%; /* Takes up 66% of the width */
+  background-color: lightblue; /* Optional: for visibility */
+}
+
+.homebg {
+  background-image: url("/homebg.jpg");
+}

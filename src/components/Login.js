@@ -58,7 +58,7 @@ export default class Login extends Component {
               <span>Login With Email & Password</span>
               <input type="email" placeholder="Enter E-mail" />
               <input type="password" placeholder="Enter Password" />
-              <a href="#">Forget Password?</a>
+              <a href="#">Forgot Password?</a>
 
               <Link className="cr" to="/">
                 <button className="" type="submit">

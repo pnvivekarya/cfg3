@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./PatientDetail.css"; // Import the CSS file
+import "./PatientDetails.css"; // Import the CSS file
+import { Link } from "react-router-dom";
 
 export default class Viewdata extends Component {
   render() {
@@ -35,7 +36,9 @@ export default class Viewdata extends Component {
               {patients.map((patient, index) => (
                 <tr key={index}>
                   <th scope="row">{index + 1}</th>
-                  <td>{patient.name}</td>
+                  <Link to="/PatientShow">
+                    <td>{patient.name}</td>
+                  </Link>
                   <td>{patient.age}</td>
                   <td>{patient.gender}</td>
                   <td>{patient.TreatBY}</td>

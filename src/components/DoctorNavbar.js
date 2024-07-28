@@ -10,7 +10,7 @@ export class DoctorNavbar extends Component {
         >
           <div className="container-fluid">
             <Link className="navbar-brand" to="/doctorpage">
-              Rohini
+              Rohini Foundation
             </Link>
             <button
               className="navbar-toggler"
